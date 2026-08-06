@@ -65,7 +65,7 @@ pyaegentris create examples\example_1.py --pack
 pyaegentris create examples\example_1.py --only-exe -w --uac-admin --no-icon
 ```
 
-**Optional - add external protector before EXE*
+**Optional - add external protector before EXE**
 
 ```bat
 pyaegentris create examples\example_1.py --pack --wait-protect
