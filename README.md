@@ -98,7 +98,6 @@ pyargentis create <source.py> [options]
 |--------|---------|
 | `--pack` | Build an EXE after protect (`output/<project>/dist/<name>.exe`) |
 | `--only-exe` | Pack to a single EXE and remove package leftovers (`output/<project>/<name>.exe`) |
-| `--wait-protect` | Pause for external protector before pack |
 | `--open-folder` | Open `output/<project>/` when finished |
 | `-p`, `--project` | Output folder name |
 | `--name` | EXE base name (default: project name) |
@@ -117,7 +116,6 @@ For the full flag list: `pyargentis -h`.
 ## Suggested release flow
 
 1. Protect your application  
-2. Apply external protector if your threat model requires it (`--wait-protect`)  
 3. Pack with `--pack`, or ship a single file with `--only-exe`  
 4. Ship only the release artifact - not your source or builder keys  
 
