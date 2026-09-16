@@ -9,12 +9,17 @@ PyArgentis is a build-time tool for protecting Python applications on Windows. I
 ## Features
 
 - **No source in the release** - end users receive a protected runtime package, not your original `.py` files.
-- **Strong encryption** - application logic is protected at build time and loaded through a native runtime module.
+- **Advanced Strong Encryption & Obfuscation** - application logic is protected at build time.
+- **Import/Memory/String Protections** - protect imported modules, runtime memory, and sensitive string data from unauthorized inspection.
+- **Error / Exception Protection** - prevent error messages, tracebacks, and runtime exceptions from exposing sensitive application or source information.
+- **Anti-Debugger / Anti-Analysis** - detect and resist common debugging and analysis attempts during runtime.
+- **Anti-Tamper / Anti-Dump** - detect unauthorized modifications and add protection against runtime dumping and code extraction.
+- **Metadata Removal & Code Cleanup** - remove unnecessary metadata, debug information, comments, and other potentially sensitive artifacts from the protected build.
 - **Optional EXE packaging** - bundle a single-file or folder-based executable with PyInstaller.
-- **Only-EXE deliverable** - pack and keep a single `.exe` under `output/<project>/` with no intermediate package files left behind.
+- **Optional Only-EXE deliverable** - pack and keep a single `.exe` under `output/<project>/` with no intermediate package files left behind.
 - **Extra protector support (Themida)** - after compiling the application to an EXE, you can protect the output EXE with Themida.
 - **Machine binding** - optional HWID lock and Windows-specific key binding for licensed deployments.
-- **GUI and CLI** - protect from the desktop app or the command line with the same engine.
+- **GUI and CLI** - protect applications from the desktop interface or automate protection workflows from the command line.
 
 ---
 
