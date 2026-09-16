@@ -36,14 +36,6 @@ Use the same Python feature release for building and running protected output wh
 
 1. **Get the project**
 
-```bat
-git clone https://github.com/synthenull/PyArgentis.git
-cd PyArgentis
-py -3.12 -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-```
-
 2. **Protect a script**
 
 ```bat
