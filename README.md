@@ -64,14 +64,6 @@ pyargentis create examples\example_1.py --pack
 pyargentis create examples\example_1.py --only-exe -w --uac-admin --no-icon
 ```
 
-**Optional - add external protector before EXE**
-
-```bat
-pyargentis create examples\example_1.py --pack --wait-protect
-```
-
-Follow the on-screen prompt, apply your external protector, then continue.
-
 **GUI**
 
 ```bat
