@@ -91,12 +91,19 @@ pyargentis create <source.py> [options]
 | `--only-exe` | Pack to a single EXE and remove package leftovers (`output/<project>/<name>.exe`) |
 | `--open-folder` | Open `output/<project>/` when finished |
 | `-p`, `--project` | Output folder name |
-| `--name` | EXE base name (default: project name) |
+| `-k`, `--key-file` | Storage key file  `Storage key file (default: keys/project.key)` |
 | `-w`, `--noconsole` | Hide the console window |
+| `--name` | EXE base name (default: project name) |
 | `--uac-admin` | Request administrator elevation for the EXE |
+| `--onedir` | Onedir output instead of onefile (not allowed with --only-exe) |
+| `--no-scan-imports` | Disable automatic import scanning of the source file |
+| `--hidden-import` / `-i` | Extra PyInstaller hidden-import (repeatable) |
+| `--target-python` |  Build only for this Python version (needs that interpreter installed) |
 | `--no-icon` / `-i` | Default icon, or custom `.ico` |
+| `--runtime-dir` / `--engine-dir` | Directory of runtime .pyd files |
 | `--bind-hwid` | Lock execution to the build machine fingerprint |
 | `--dpapi-bind` | Bind protection to this Windows installation |
+| `--obfuscation-level` | Set the obfuscation level `{standard,maximum,extreme}` |
 
 You can also run `pyargentis your_app.py` as shorthand for `create`.
 
