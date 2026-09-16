@@ -36,7 +36,7 @@ Use the same Python feature release for building and running protected output wh
 
 1. **Get the project**
 ```bat
-To get the project, contact [@synthenull.](https://github.com/synthenull)
+To get the project, contact (@synthenull.)[https://github.com/synthenull]
 ```
 2. **Protect a script**
 
