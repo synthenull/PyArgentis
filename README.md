@@ -38,7 +38,7 @@ Use the same Python feature release for building and running protected output wh
 ```bat
 To get the project, contact synthenull.
 ```
-2. **Protect a script**
+2. **Protect a script (CLI)**
 
 ```bat
 pyargentis create examples\example_1.py
@@ -52,19 +52,19 @@ Protected output is written under `output/<project>/` (for example `output\examp
 python output\example_1\main.py
 ```
 
-**Optional - build an EXE** (keeps the protected package; EXE under `dist\`)
+**Optional - build an EXE (CLI)** (keeps the protected package; EXE under `dist\`)
 
 ```bat
 pyargentis create examples\example_1.py --pack
 ```
 
-**Optional - single EXE only** (no `main.py` / `.pyd` leftovers)
+**Optional - single EXE only (CLI)** (no `main.py` / `.pyd` leftovers)
 
 ```bat
 pyargentis create examples\example_1.py --only-exe -w --uac-admin --no-icon
 ```
 
-**GUI**
+**GUI (Recommended)**
 
 ```bat
 launch_gui.bat
