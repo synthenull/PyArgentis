@@ -79,7 +79,7 @@ pyargentis -v
 
 ---
 
-## Common options
+## CLI Commands
 
 ```text
 pyargentis create <source.py> [options]
