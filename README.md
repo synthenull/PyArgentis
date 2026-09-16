@@ -1,8 +1,8 @@
-# PyAegentris
+# PyArgentis
 
-PyAegentris is a build-time tool for protecting Python applications on Windows. It turns your source into an encrypted runtime package and can optionally produce a standalone EXE for distribution.
+PyArgentis is a build-time tool for protecting Python applications on Windows. It turns your source into an encrypted runtime package and can optionally produce a standalone EXE for distribution.
 
-![PyAegentris Protector GUI](https://raw.githubusercontent.com/synthenull/PyAegentris/refs/heads/main/screenshots/pyaegentris_gui.png)
+![PyArgentis Protector GUI](https://raw.githubusercontent.com/synthenull/PyArgentis/refs/heads/main/screenshots/pyargentis_gui.png)
 
 ---
 
@@ -32,8 +32,8 @@ Use the same Python feature release for building and running protected output wh
 1. **Get the project**
 
 ```bat
-git clone https://github.com/synthenull/PyAegentris.git
-cd PyAegentris
+git clone https://github.com/synthenull/PyArgentis.git
+cd PyArgentis
 py -3.12 -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
@@ -42,7 +42,7 @@ pip install -r requirements.txt
 2. **Protect a script**
 
 ```bat
-pyaegentris create examples\example_1.py
+pyargentis create examples\example_1.py
 ```
 
 Protected output is written under `output/<project>/` (for example `output\example_1\main.py` plus the native runtime).
@@ -56,19 +56,19 @@ python output\example_1\main.py
 **Optional - build an EXE** (keeps the protected package; EXE under `dist\`)
 
 ```bat
-pyaegentris create examples\example_1.py --pack
+pyargentis create examples\example_1.py --pack
 ```
 
 **Optional - single EXE only** (no `main.py` / `.pyd` leftovers)
 
 ```bat
-pyaegentris create examples\example_1.py --only-exe -w --uac-admin --no-icon
+pyargentis create examples\example_1.py --only-exe -w --uac-admin --no-icon
 ```
 
 **Optional - add external protector before EXE**
 
 ```bat
-pyaegentris create examples\example_1.py --pack --wait-protect
+pyargentis create examples\example_1.py --pack --wait-protect
 ```
 
 Follow the on-screen prompt, apply your external protector, then continue.
@@ -76,15 +76,14 @@ Follow the on-screen prompt, apply your external protector, then continue.
 **GUI**
 
 ```bat
-run_gui.bat
+launch_gui.bat
 ```
 
 **CLI help**
 
 ```bat
-pyaegentris -h
-pyaegentris create -h
-pyaegentris -v
+pyargentis -h
+pyargentis -v
 ```
 
 ---
@@ -92,7 +91,7 @@ pyaegentris -v
 ## Common options
 
 ```text
-pyaegentris create <source.py> [options]
+pyargentis create <source.py> [options]
 ```
 
 | Option | Purpose |
@@ -109,9 +108,9 @@ pyaegentris create <source.py> [options]
 | `--bind-hwid` | Lock execution to the build machine fingerprint |
 | `--dpapi-bind` | Bind protection to this Windows installation |
 
-You can also run `pyaegentris your_app.py` as shorthand for `create`.
+You can also run `pyargentis your_app.py` as shorthand for `create`.
 
-For the full flag list: `pyaegentris create -h`.
+For the full flag list: `pyargentis -h`.
 
 ---
 
@@ -134,7 +133,7 @@ Proprietary - see [LICENSE](LICENSE). Redistribution of the tool is not permitte
 
 ## Links
 
-- **Repository:** [github.com/synthenull/PyAegentris](https://github.com/synthenull/PyAegentris)
+- **Repository:** [github.com/synthenull/PyArgentis](https://github.com/synthenull/PyArgentis)
 - **Changelog:** [docs/RELEASES.md](docs/RELEASES.md)
 
 ---
