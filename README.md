@@ -26,7 +26,7 @@ PyArgentis is a build-time tool for protecting Python applications on Windows. I
 ## Supported environment
 
 - **OS:** Windows 10/11 (64-bit)
-- **Python:** 3.12, 3.13, or 3.14
+- **Python:** 3.12, 3.13, 3.14
 
 Use the same Python feature release for building and running protected output when possible.
 
