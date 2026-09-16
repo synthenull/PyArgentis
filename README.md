@@ -35,7 +35,9 @@ Use the same Python feature release for building and running protected output wh
 ## Quick start
 
 1. **Get the project**
-
+```bat
+With contact.
+```
 2. **Protect a script**
 
 ```bat
