@@ -2,6 +2,26 @@
 
 ---
 
+## v1.6.0 - 2026-09-09
+
+### Added
+* Code obfuscation level option for GUI and CLI (Standard / Maximum / Extreme).
+
+### Changed
+* Packaged EXE files are now smaller.
+* The GUI checkboxes have been changed to toggle buttons.
+
+### Security
+* Multi-stage hardening implemented against both static and dynamic reverse engineering of the runtime component.
+
+### Removed
+* The Output tab has been removed from the GUI.
+
+### Fixed
+* Various bugs fixed.
+
+---
+
 ## V1.5 - 2026-07-20
 
 ### Added
