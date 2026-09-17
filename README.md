@@ -2,7 +2,7 @@
 
 PyArgentis is a build-time tool for protecting Python applications on Windows. It turns your source into an encrypted runtime package and can optionally produce a standalone EXE for distribution.
 
-![PyArgentis Protector GUI](https://raw.githubusercontent.com/synthenull/PyArgentis/refs/heads/main/screenshots/pyargentis_gui.png)
+[PyArgentis Protector GUI](https://raw.githubusercontent.com/synthenull/PyArgentis/refs/heads/main/screenshots/pyargentis_gui.png)
 
 ---
 
