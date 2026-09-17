@@ -133,7 +133,6 @@ Proprietary - see [LICENSE](LICENSE). Redistribution of the tool is not permitte
 - **Changelog:** [docs/RELEASES.md](docs/RELEASES.md)
 
 ---
-
 ## Getting help
 
 Open an issue on GitHub with your Python version and the command or GUI steps you used. Include log output when reporting a build failure.
