@@ -2,6 +2,32 @@
 
 ---
 
+## v1.7.0 - 30-09-2026
+
+### Added
+* Device Binding options: Off, Hardware ID, and Windows Installation.
+* Optional protection for imported project-local Python files, with a custom import hook for loading protected modules.
+* Optional Clean docstrings setting
+* New CLI commands: `--device-binding`, `--clean-docstrings`, and `--protect-imported-python-files`.
+
+### Improved
+* Improved discovery of supported dynamic imports, including aliases, literal string concatenations, and import fromlists.
+* Refined GUI labels, spacing, alignment, and light-theme styling.
+
+### Security
+* Added executable archive checks for known unprotected project-file copies and development artifacts.
+* Extended archive validation to cover Python cache files, filename case variations, and additional development artifacts.
+
+### Fixed
+* Fixed clipped controls and inconsistent section spacing in the GUI.
+* Corrected file-picker filters for Python source and key files.
+
+### Maintenance
+* Updated the error-code reference.
+* Expanded behavioral and executable regression tests, including windowed and folder-based builds.
+
+---
+
 ## v1.6.0 - 2026-09-09
 
 ### Added
