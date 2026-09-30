@@ -7,6 +7,7 @@
 * Optional protection for imported project-local Python files, with a custom import hook for loading protected modules.
 * Optional Clean docstrings setting
 * New CLI commands: `--device-binding`, `--clean-docstrings`, and `--protect-imported-python-files`.
+* New Examples: `example_basic_license_system.py` and `example_project`. See the [examples directory](https://github.com/synthenull/PyArgentis/tree/main/examples).
 
 ### Improved
 * Improved discovery of supported dynamic imports, including aliases, literal string concatenations, and import fromlists.
