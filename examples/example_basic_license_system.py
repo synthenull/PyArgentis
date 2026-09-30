@@ -4,7 +4,7 @@ import sys
 
 os.system("color e")
 
-key="?82D'gb3#^yU=ZBPw?@9NY8,:`s`z0XN-)$rNXFo#^4i+nVQr1]bp3P~jn/e`8W"
+key = "M89309Q7ZVTFK3ERG5NRTEVYSTNWCD5E"
 
 if input("\n [/] Enter the key: ") == key:
     print("\n [+] Valid key!")
