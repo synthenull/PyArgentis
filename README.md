@@ -8,17 +8,20 @@ PyArgentis is a build-time tool for protecting Python applications on Windows. I
 
 ## Features
 
-- **No source in the release** - end users receive a protected runtime package, not your original `.py` files.
+- **Protected Source Distribution** - distribute protected application code without shipping the original source files for protected modules.
 - **Advanced Strong Encryption & Obfuscation** - application logic is protected at build time.
 - **Import/Memory/String Protections** - protect imported modules, runtime memory, and sensitive string data from unauthorized inspection.
-- **Error / Exception Protection** - prevent error messages, tracebacks, and runtime exceptions from exposing sensitive application or source information.
+- **Error / Exception Protection** - remove original source paths and line-table information from protected code objects.
 - **Anti-Debugger / Anti-Analysis** - detect and resist common debugging and analysis attempts during runtime.
 - **Anti-Tamper / Anti-Dump** - detect unauthorized modifications and add protection against runtime dumping and code extraction.
-- **Metadata Removal & Code Cleanup** - remove unnecessary metadata, debug information, comments, and other potentially sensitive artifacts from the protected build.
+- **Import Hook** - load bundled protected Python files through a custom import loader without requiring separate source files.
+- **Metadata Cleanup** - nonymize source paths, remove line-table information, and obscure eligible code identifiers.
+- **Executable Security Checks** - check packaged executables for known unprotected project-file copies and development artifacts.
+- **Optional Docstring Cleanup** - enable Clean docstrings to remove documentation strings when application compatibility permits.
 - **Optional EXE packaging** - bundle a single-file or folder-based executable with PyInstaller.
 - **Optional Only-EXE deliverable** - pack and keep a single `.exe` under `output/<project>/` with no intermediate package files left behind.
 - **Extra protector support (Themida)** - after compiling the application to an EXE, you can protect the output EXE with Themida.
-- **Machine binding** - optional HWID lock and Windows-specific key binding for licensed deployments.
+- **Device Binding** - optionally restrict execution using Hardware ID or Windows Installation binding.
 - **GUI and CLI** - protect applications from the desktop interface or automate protection workflows from the command line.
 
 ---
@@ -44,7 +47,7 @@ To get the project, contact synthenull.
 pyargentis create examples\example_1.py
 ```
 
-Protected output is written under `output/<project>/` (for example `output\example_1\main.py` plus the native runtime).
+Protected output is written under `output/<project>/`. The generated `main.py` contains the embedded native runtime; no separate runtime `.pyd` is shipped.
 
 3. **Run the protected app**
 
@@ -91,19 +94,21 @@ pyargentis create <source.py> [options]
 | `--only-exe` | Pack to a single EXE and remove package leftovers (`output/<project>/<name>.exe`) |
 | `--open-folder` | Open `output/<project>/` when finished |
 | `-p`, `--project` | Output folder name |
-| `-k`, `--key-file` | Storage key file  `Storage key file (default: keys/project.key)` |
+| `-k`, `--key-file` | Storage key file (default: `keys/project.key`) |
 | `-w`, `--noconsole` | Hide the console window |
 | `--name` | EXE base name (default: project name) |
 | `--uac-admin` | Request administrator elevation for the EXE |
 | `--onedir` | Onedir output instead of onefile (not allowed with --only-exe) |
 | `--no-scan-imports` | Disable automatic import scanning of the source file |
-| `--hidden-import` / `-i` | Extra PyInstaller hidden-import (repeatable) |
-| `--target-python` |  Build only for this Python version (needs that interpreter installed) |
-| `--no-icon` / `-i` | Default icon, or custom `.ico` |
+| `--hidden-import` | Extra PyInstaller hidden-import (repeatable) |
+| `--target-python` | Select the target Python version `{3.12,3.13,3.14}` |
+| `--no-icon` | Disable custom icon selection (`icon=NONE`) |
+| `-i`, `--icon` | Set a custom EXE icon from an `.ico` file |
 | `--runtime-dir` / `--engine-dir` | Directory of runtime .pyd files |
-| `--bind-hwid` | Lock execution to the build machine fingerprint |
-| `--dpapi-bind` | Bind protection to this Windows installation |
+| `--device-binding` | Set device binding `{off,hwid,windows}` |
 | `--obfuscation-level` | Set the obfuscation level `{standard,maximum,extreme}` |
+| `--clean-docstrings` | Remove docstrings from protected code |
+| `--protect-imported-python-files` | Protect discovered project-local Python imports |
 
 You can also run `pyargentis your_app.py` as shorthand for `create`.
 
