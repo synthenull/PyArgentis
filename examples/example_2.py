@@ -1,7 +1,7 @@
-"""PyAegentris - Example App #2"""
+"""PyArgentis - Example App #2"""
 
 
-app_name= "PyAegentris Example #2"
+app_name= "PyArgentis Example #2"
 build_tag = "example-2026"
 
 
