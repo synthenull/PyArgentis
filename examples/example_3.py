@@ -1,6 +1,6 @@
-"""PyAegentris - Example App #3"""
+"""PyArgentis - Example App #3"""
 
-APP_NAME = "PyAegentris Example #3"
+APP_NAME = "PyArgentis Example #3"
 VERSION = "0.3.0"
 
 PLANS = {
