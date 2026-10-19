@@ -1,4 +1,4 @@
-print("PyAegentris - Example App")
+print("PyArgentis - Example App")
 
 if __name__ == "__main__":
     secret = 40 + 2
