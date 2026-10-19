@@ -1,6 +1,6 @@
-"""PyAegentris - Example App #4"""
+"""PyArgentis - Example App #4"""
 
-APP_NAME = "PyAegentris Example #4"
+APP_NAME = "PyArgentis Example #4"
 SALT = 0x5A17
 
 
